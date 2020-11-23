@@ -7,7 +7,5 @@ morse_convert() ->
 mOrse_convert([]) -> io:fwrite("~n");
 mOrse_convert([First | Last]) ->
    O = [maps:get([First], morse_convert())],
-   P = [First],
-   io:fwrite("~s:  ",[P]),
    io:fwrite("~s~n",[O]),
   mOrse_convert(Last).
