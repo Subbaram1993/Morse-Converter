@@ -1,0 +1,21 @@
+For the code txt_to_morse.erl , the output is below.
+
+Erlang/OTP 20 [erts-9.2] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:10] [kernel-poll:false]
+
+Eshell V9.2  (abort with ^G)
+1> c(txt_to_morse).
+{ok,txt_to_morse}
+2> txt_to_morse:mOrse_convert("hello,world").
+....  .  .-..  .-..  ---  --..-- .--  ---  .-.  .-..  -..  
+ok
+3> 
+
+
+For the code morse_to_txt.erl , the output is below.
+
+4> c(morse_to_txt).
+{ok,morse_to_txt}
+5> morse_to_txt:get_code_for_words("....  .  .-..  .-..  ---  --..-- .--  ---  .-.  .-..  -..").
+hello,world
+ok
+6> 
